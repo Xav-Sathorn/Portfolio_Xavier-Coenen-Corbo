@@ -7,16 +7,22 @@
 
 @font-face {
     font-family: 'retro_computer';
-    src: url(/src/VCR_OSD_MONO_1.001.ttf);
+    src: url(/src/retro_computer.ttf);
 }
 
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 
 #logo {
     margin-top: 30px;
     width: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -30,6 +36,7 @@ header {
     background-color: #212222;
     color: white;
     padding-bottom: 30px;
+    margin-top: -20px;
 }
 
 h1 {
@@ -129,7 +136,8 @@ footer {
     background-color: #1d1d1d;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 30px;
+    margin-bottom: -15px;
 }
 
 #contact {
@@ -234,19 +242,10 @@ footer {
     height: 250px;
 }
 
-#type-code {
-    font-family: 'retro_computer';
-    font-size: 1.4em;
-    color: rgb(171, 166, 13);
-}
+
 
 /*CV*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+
 
 #logoCv {
     margin-top: 30px;
@@ -270,7 +269,7 @@ footer {
 }
 
 #type-code {
-    font-family: 'retro_computer';
+    font-family: 'VT323', monospace;
     font-size: 1.5rem;
     margin-left: -60px;
     color: greenyellow;
@@ -401,12 +400,13 @@ footer {
     color: rgb(185, 181, 181);
 }
 
-.right-area h1 {
-    font-size: 35px;
+.right-area h2 {
+    font-size: 25px;
     font-weight: bold;
+    margin-left: 0px;
 }
 
-.right-area h1 span {
+.right-area h2 span {
     margin-right: 30px;
     font-size: 50px;
     color: gray;
@@ -438,6 +438,10 @@ footer {
     position: relative;
 }
 
+.right-area h2:hover {
+    color: #f18a03;
+}
+
 .work-group h3 {
     font-size: 22px;
     font-weight: normal;
@@ -449,6 +453,26 @@ footer {
     padding-left: 70px;
     font-weight: normal;
     color: gray;
+}
+
+.work-group h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.edu-group h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .work-group span {
@@ -549,7 +573,7 @@ button:hover {
 @media all and (max-width: 1000px) {
 
     body {
-        width: 170%;
+        width: 180%;
         margin: 15px auto;
     }
 
