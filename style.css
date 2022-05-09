@@ -5,6 +5,11 @@
     src: url(/src/justicia/Justicia.ttf);
 }
 
+@font-face {
+    font-family: 'retro_computer';
+    src: url(/src/VCR_OSD_MONO_1.001.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -229,6 +234,11 @@ footer {
     height: 250px;
 }
 
+#type-code {
+    font-family: 'retro_computer';
+    font-size: 1.4em;
+    color: rgb(171, 166, 13);
+}
 
 /*CV*/
 * {
@@ -257,6 +267,13 @@ footer {
     filter: grayscale(0%);
     transform: scale(1.05);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+
+#type-code {
+    font-family: 'retro_computer';
+    font-size: 1.5rem;
+    margin-left: -60px;
+    color: greenyellow;
 }
 
 .print-area {
@@ -532,7 +549,7 @@ button:hover {
 @media all and (max-width: 1000px) {
 
     body {
-        width: 150%;
+        width: 170%;
         margin: 15px auto;
     }
 
