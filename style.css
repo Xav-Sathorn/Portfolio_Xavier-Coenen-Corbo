@@ -18,6 +18,32 @@
     width: 100px;
 }
 
+#logoGit {
+    background-color: transparent;
+    margin-top: 30px;
+    width: 100px;
+
+}
+
+#logoCodepen {
+    background-color: transparent;
+    margin-top: 30px;
+    width: 150px;
+}
+
+#logoLondon {
+    background-color: transparent;
+    margin-top: 30px;
+    width: 250px;
+}
+
+
+#logoFrance {
+    background-color: transparent;
+    margin-top: 30px;
+    width: 150px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,17 +58,21 @@ body {
 }
 
 header {
+
     text-align: center;
     background-color: #212222;
     color: white;
     padding-bottom: 30px;
-    margin-top: -20px;
+    margin-top: -40px;
+}
+
+#computer p {
+    font-family: 'retro_computer';
 }
 
 h1 {
     font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
-    margin-top: 0;
-    padding-top: 30px;
+    margin-top: 40px;
     font-size: 5em;
     font-weight: bold;
 
@@ -103,7 +133,7 @@ ul {
 
 }
 
-li {
+nav li {
     list-style-type: none;
     display: inline;
     margin: 15px;
@@ -146,6 +176,8 @@ footer {
     padding: 30px;
     margin-bottom: 50px;
 }
+
+
 
 #projets {
     display: flex;
@@ -270,8 +302,11 @@ footer {
 
 #type-code {
     font-size: 1.3rem;
-    margin-left: -60px;
     color: #f18a03;
+}
+
+.typewrite {
+    font-family: 'retro_computer', 'Arial Narrow', Arial, sans-serif;
 }
 
 .print-area {
@@ -287,7 +322,7 @@ footer {
 }
 
 .left-area {
-    width: 30%;
+    width: 45%;
     text-align: center;
     padding-bottom: 10px;
     color: rgb(185, 181, 181);
@@ -316,7 +351,7 @@ footer {
 }
 
 .skills {
-    margin-top: 40px;
+    margin-bottom: auto;
 }
 
 .skills h1 {
@@ -324,40 +359,353 @@ footer {
     font-weight: bold;
 }
 
-.bars {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px 10px;
-    padding: 0 20px;
-}
-
-.bars .bar p {
-    font-size: 15px;
+.skills-diagram {
+    font-size: 16px;
     font-weight: bold;
-    color: #f18a03;
+    text-align: center;
+    max-width: 35em;
+    margin: 2em auto 2em;
 }
 
-.bar span {
+.skills-diagram>dd {
+    /* Hide inner attributes */
+    display: none;
+}
+
+.skills-diagram dt {
+    display: inline-block;
+    vertical-align: top;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+
+    /* set defaults to skill-2 */
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+}
+
+.skills-diagram dt:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Support vertical mode */
+.skills-diagram-vertical dt {
     display: block;
-    width: 100%;
-    height: 10px;
-    background-color: rgb(192, 191, 191);
-    margin-top: 10px;
-    border-radius: 10px;
-    position: relative;
+    /* .25em is an equivalent to inline-block's horizontal whitespace margin */
+    margin: .25em auto;
 }
 
-.bar span::before {
+/* Provide 10 different sizes */
+.skills-diagram .skill-2 {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+
+    background-color: rgba(201, 155, 129, .3);
+    border-color: rgba(201, 155, 129, 1);
+    color: rgba(201, 155, 129, 1);
+}
+
+.skills-diagram .skill-3 {
+    vertical-align: middle;
+
+    width: 10em;
+    height: 10em;
+    line-height: 10em;
+    background-color: rgba(138, 138, 140, .3);
+    border-color: rgba(138, 138, 140, 1);
+    color: rgba(138, 138, 140, 1);
+}
+
+.skills-diagram .skill-4 {
+    width: 14em;
+    height: 14em;
+    line-height: 14em;
+
+    background-color: rgba(234, 112, 97, .3);
+    border-color: rgba(234, 112, 97, 1);
+    color: rgba(234, 112, 97, 1);
+}
+
+.skills-diagram .skill-5 {
+    vertical-align: bottom;
+
+    width: 5em;
+    height: 5em;
+    line-height: 5em;
+    background-color: rgba(109, 182, 173, .3);
+    border-color: rgba(109, 182, 173, 1);
+    color: rgba(109, 182, 173, 1);
+}
+
+.skills-diagram .skill-6 {
+    vertical-align: top;
+
+    width: 6em;
+    height: 6em;
+    line-height: 6em;
+
+    background-color: rgba(195, 192, 100, .3);
+    border-color: rgba(195, 192, 100, 1);
+    color: rgba(195, 192, 100, 1);
+}
+
+.skills-diagram .skill-7 {
+    width: 7em;
+    height: 7em;
+    line-height: 7em;
+
+    background-color: rgba(214, 89, 102, .3);
+    border-color: rgba(214, 89, 102, 1);
+    color: rgba(214, 89, 102, 1);
+}
+
+.skills-diagram .skill-8 {
+    vertical-align: bottom;
+
+    width: 8em;
+    height: 8em;
+    line-height: 8em;
+    background-color: rgba(46, 138, 75, .3);
+    border-color: rgba(46, 138, 75, 1);
+    color: rgba(46, 138, 75, 1);
+}
+
+.skills-diagram .skill-9 {
+    width: 11em;
+    height: 11em;
+    line-height: 11em;
+
+    background-color: rgba(177, 18, 2, .3);
+    border-color: rgba(177, 18, 2, 1);
+    color: rgba(177, 18, 2, 1);
+}
+
+.skills-diagram .skill-10 {
+    width: 7em;
+    height: 7em;
+    line-height: 7em;
+    background-color: rgba(81, 112, 144, .3);
+    border-color: rgba(81, 112, 144, 1);
+    color: rgba(81, 112, 144, 1);
+    margin-bottom: 3em;
+}
+
+.chart-skills {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 100px;
+}
+
+
+
+/* CHART-SKILLS STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.chart-skills {
+    position: relative;
+    width: 350px;
+    height: 175px;
+    overflow: hidden;
+}
+
+
+
+.chart-skills li {
     position: absolute;
-    content: "";
-    width: 55%;
-    height: 80%;
-    background-color: black;
-    top: 50%;
-    left: 2px;
-    transform: translateY(-50%);
-    border-radius: 10px;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border: 45px solid;
+    border-top: none;
+    border-bottom-left-radius: 175px;
+    border-bottom-right-radius: 175px;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+    animation-timing-function: linear;
+
+}
+
+.chart-skills li:nth-child(1) {
+    z-index: 4;
+    border-color: rgb(248, 228, 10);
+    animation-name: rotate-one;
+}
+
+.chart-skills li:nth-child(2) {
+    z-index: 3;
+    border-color: orange;
+    animation-name: rotate-two;
+    animation-delay: .4s;
+}
+
+.chart-skills li:nth-child(3) {
+    z-index: 2;
+    border-color: rgb(208, 110, 12);
+    animation-name: rotate-three;
+    animation-delay: .8s;
+}
+
+.chart-skills li:nth-child(4) {
+    z-index: 1;
+    border-color: rgb(213, 71, 20);
+    animation-name: rotate-four;
+    animation-delay: 1.2s;
+}
+
+.chart-skills span {
+    position: absolute;
+    font-size: .85rem;
+    backface-visibility: hidden;
+    animation: fade-in .4s linear forwards;
+}
+
+.chart-skills li:nth-child(1) span {
+    top: 5px;
+    left: 10px;
+    transform: rotate(-21.6deg);
+}
+
+.chart-skills li:nth-child(2) span {
+    top: 20px;
+    left: 10px;
+    transform: rotate(-79.2deg);
+    animation-delay: .4s;
+}
+
+.chart-skills li:nth-child(3) span {
+    top: 18px;
+    left: 10px;
+    transform: rotate(-140.4deg);
+    animation-delay: .8s;
+}
+
+.chart-skills li:nth-child(4) span {
+    top: 10px;
+    left: 10px;
+    transform: rotate(-180deg);
+    animation-delay: 1.2s;
+}
+
+
+/* ANIMATIONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@keyframes rotate-one {
+    100% {
+        transform: rotate(21.6deg);
+        /**
+       * 12% => 21.6deg
+       */
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotate(21.6deg);
+    }
+
+    100% {
+        transform: rotate(79.2deg);
+        /**
+       * 32% => 57.6deg 
+       * 57.6 + 21.6 => 79.2deg
+       */
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotate(79.2deg);
+    }
+
+    100% {
+        transform: rotate(140.4deg);
+        /**
+       * 34% => 61.2deg 
+       * 61.2 + 79.2 => 140.4deg
+       */
+    }
+}
+
+@keyframes rotate-four {
+    0% {
+        transform: rotate(140.4deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+        /**
+       * 22% => 39.6deg  
+       * 140.4 + 39.6 => 180deg
+       */
+    }
+}
+
+@keyframes fade-in {
+
+    0%,
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* Just to add real-scenario feeling */
+
+
+
+a {
+    color: rgb(25, 24, 24);
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+.skills h1 {
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.soft-skills {
+    margin-top: 100px;
+}
+
+.soft-skills h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+.languages {
+    display: inline;
+    ;
 }
 
 .languages h1 {
@@ -372,8 +720,12 @@ footer {
 }
 
 .languages p {
-    font-size: 15px;
-    color: #f18a03;
+    font-size: 20px;
+    color: #eeb974;
+}
+
+.follow {
+    margin-top: 100px;
 }
 
 .follow h1 {
@@ -387,6 +739,12 @@ footer {
     margin: 10px 0;
 }
 
+.follow:hover h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #f18a03;
+}
+
 .follow p {
     font-size: 10px;
     color: #f18a03;
@@ -394,7 +752,7 @@ footer {
 }
 
 .right-area {
-    width: 70%;
+    width: 55%;
     padding: 50px;
     color: rgb(185, 181, 181);
 }
@@ -424,9 +782,13 @@ footer {
     padding-left: 70px;
     text-align: justify;
     word-break: break-all;
-    font-size: 17px;
+    font-size: 20px;
     color: gray;
     margin-top: 10px;
+}
+
+#work {
+    margin-top: 100px;
 }
 
 .work-group {
@@ -484,7 +846,7 @@ footer {
 }
 
 .education {
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 .education h1 {
@@ -535,18 +897,38 @@ button:hover {
 }
 
 
-.btn {
-    height: 50px;
-    width: 50px;
-    background: rgb(231, 144, 14);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#myBtn {
+    display: none;
+    /* Hidden by default */
     position: fixed;
-    right: 20px;
+    /* Fixed/sticky position */
     bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: transparent;
+    /* Set a background color */
+    color: rgb(231, 144, 14);
+    /* Text color */
     cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: rgb(59, 58, 58);
+    /* Add a dark-grey background on hover */
 }
 
 .icone {
@@ -600,5 +982,15 @@ button:hover {
 
     header h2 {
         width: 90%;
+    }
+
+    .right-area {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-area {
+        width: 100%;
+        height: auto;
     }
 }
