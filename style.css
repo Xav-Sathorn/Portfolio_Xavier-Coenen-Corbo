@@ -33,7 +33,7 @@
 }
 
 #logoCodepen {
-    background-color: transparent;
+    color: #f18a03;
     margin-top: 30px;
     width: 150px;
 }
@@ -281,7 +281,9 @@ footer {
     height: 250px;
 }
 
-
+.fa-solid {
+    color: #f18a03;
+}
 
 /*CV*/
 
