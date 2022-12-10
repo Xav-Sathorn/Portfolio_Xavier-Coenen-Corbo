@@ -462,10 +462,9 @@ footer {
 .skills-diagram .skill-6 {
     vertical-align: top;
 
-    width: 6em;
-    height: 6em;
-    line-height: 6em;
-
+    width: 10em;
+    height: 10em;
+    line-height: 10em;
     background-color: rgba(195, 192, 100, .3);
     border-color: rgba(195, 192, 100, 1);
     color: rgba(195, 192, 100, 1);
@@ -506,6 +505,16 @@ footer {
     width: 7em;
     height: 7em;
     line-height: 7em;
+    background-color: rgba(81, 112, 144, .3);
+    border-color: rgba(81, 112, 144, 1);
+    color: rgba(81, 112, 144, 1);
+    margin-bottom: 3em;
+}
+
+.skills-diagram .skill-11 {
+    width: 10em;
+    height: 10em;
+    line-height: 10em;
     background-color: rgba(81, 112, 144, .3);
     border-color: rgba(81, 112, 144, 1);
     color: rgba(81, 112, 144, 1);
